@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.num-div {
+    margin: 15px;
+}
+
+.num-div input {
+    margin-left: 10px;
+}
+
+.first-num-text {
+    margin-left: 18px;
+}
+
+.radio-buttons input {
+    margin-bottom: 15px;
+}
+
+.radio-buttons {
+    margin-left: 130px;
+}
+

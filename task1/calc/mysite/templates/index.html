@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<form action="/res" method="post">
+    {% csrf_token %}
+    <div class="num-div">
+        <label><span class="first-num-text">First Number:</span></label><input type="text" name="fir_num"><br/>
+    </div>
+    
+    <div class="num-div">
+        <label><span>Second Number:</span></label><input type="text" name="sec_num"/><br/>
+    </div>
+
+    <div class="radio-buttons">
+        <input type="radio" name="operation" value="add">add<br/>
+        <input type="radio" name="operation" value="sub">subtract<br/>
+        <input type="radio" name="operation" value="mult">multiply<br/>
+        <input type="radio" name="operation" value="div">divide<br/>
+        <input type="submit" value="Calculate">
+    </div>
+</form>
+</body>
+</html>
